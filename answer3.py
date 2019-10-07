@@ -27,8 +27,9 @@ print(json.dumps(input))
 '''
 答案 Python code的輸出結果為:
 {"banana":1,"apple":2,"orange":3}
-因為json.dumps在處理dic時會在value前多一個" "空格
-所以就把": "用":"取代即可
+因為json.dumps在處理dic時會在key和value多一個" "空格
+把', "'取代',"' 去除key的空格
+把": "用":" 去除value的空格
 '''
 print('我的Python做法:')
-print(json.dumps(input).replace(": ", ":"))
+print(json.dumps(input).replace(', "', ',"').replace('": ', '":'))
