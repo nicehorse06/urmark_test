@@ -1,6 +1,6 @@
 2.請問依序列印 list 1-3 結果是如何？為何？ ( Python 3 ) :
 ```
-def add_val_to_list (val, list=[]) :  
+def add_val_to_list (val, list=[]):  
 	list.append(val)
 	return list
 
